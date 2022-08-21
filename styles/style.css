@@ -5,3 +5,22 @@
 .height {
     height: 345px;
 }
+
+ol {
+    list-style: none;
+    counter-reset: item;
+}
+
+li {
+    counter-increment: item;
+    margin-bottom: 5px;
+}
+
+li:before {
+    margin-right: 10px;
+    content: counter(item);
+    color: white;
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+}

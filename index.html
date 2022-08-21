@@ -36,10 +36,10 @@
 
         <section class="w-10/12 mx-auto mb-20 flex gap-4">
             <div class="w-9/12">
-                <div class="grid grid-cols-3 gap-4 ">
+                <div class="grid grid-cols-3 gap-5 ">
                     <div class="bg-black text-white text-center pb-5 ">
                         <img class="h-48" src="images/players/leo-messi.jpg" alt="">
-                        <h1 class="text-2xl  font-bold pt-3">Leo Messi</h1>
+                        <h1 id="leo" class="text-2xl  font-bold pt-3">Leo Messi</h1>
                         <div class="flex gap-3 justify-center items-center py-3">
                             <p>36 Goals</p>
                             <p>.</p>
@@ -50,58 +50,58 @@
                     </div>
                     <div class="bg-black text-white text-center pb-5 ">
                         <img class="h-48" src="images/players/neymar.jpg" alt="">
-                        <h1 class="text-2xl  font-bold pt-3">Neymar Junior</h1>
+                        <h1 id="neymar" class="text-2xl  font-bold pt-3">Neymar Junior</h1>
                         <div class="flex gap-3 justify-center items-center py-3">
                             <p>36 Goals</p>
                             <p>.</p>
                             <p>400 Assists</p>
                         </div>
-                        <button class="bg-blue-600 px-20 py-2">Select</button>
+                        <button id="neymar-btn" class="bg-blue-600 px-20 py-2">Select</button>
 
                     </div>
                     <div class="bg-black text-white text-center pb-5 ">
                         <img class="h-48" src="images/players/dybala.jpg" alt="">
-                        <h1 class="text-2xl  font-bold pt-3">Paulo Dybala</h1>
+                        <h1 id="dybala" class="text-2xl  font-bold pt-3">Paulo Dybala</h1>
                         <div class="flex gap-3 justify-center items-center py-3">
                             <p>36 Goals</p>
                             <p>.</p>
                             <p>400 Assists</p>
                         </div>
-                        <button class="bg-blue-600 px-20 py-2">Select</button>
+                        <button id="dybala-btn" class="bg-blue-600 px-20 py-2">Select</button>
 
                     </div>
 
                     <div class="bg-black text-white text-center pb-5 ">
                         <img class="h-48" src="images/players/ramos.jpg" alt="">
-                        <h1 class="text-2xl  font-bold pt-3">Sergio Ramos</h1>
+                        <h1 id="ramos" class="text-2xl  font-bold pt-3">Sergio Ramos</h1>
                         <div class="flex gap-3 justify-center items-center py-3">
                             <p>36 Goals</p>
                             <p>.</p>
                             <p>400 Assists</p>
                         </div>
-                        <button class="bg-blue-600 px-20 py-2">Select</button>
+                        <button id="ramos-btn" class="bg-blue-600 px-20 py-2">Select</button>
 
                     </div>
                     <div class="bg-black text-white text-center pb-5 ">
                         <img class="h-48" src="images/players/karim.jpg" alt="">
-                        <h1 class="text-2xl  font-bold pt-3">Karim Benzama</h1>
+                        <h1 id="benzama" class="text-2xl  font-bold pt-3">Karim Benzama</h1>
                         <div class="flex gap-3 justify-center items-center py-3">
                             <p>36 Goals</p>
                             <p>.</p>
                             <p>400 Assists</p>
                         </div>
-                        <button class="bg-blue-600 px-20 py-2">Select</button>
+                        <button id="benzama-btn" class="bg-blue-600 px-20 py-2">Select</button>
 
                     </div>
                     <div class="bg-black text-white text-center pb-5 ">
                         <img class="h-48" src="images/players/ronaldo.jpg" alt="">
-                        <h1 class="text-2xl  font-bold pt-3">Cristiano Ronaldo</h1>
+                        <h1 id="ronaldo" class="text-2xl  font-bold pt-3">Cristiano Ronaldo</h1>
                         <div class="flex gap-3 justify-center items-center py-3">
                             <p>36 Goals</p>
                             <p>.</p>
                             <p>400 Assists</p>
                         </div>
-                        <button class="bg-blue-600 px-20 py-2">Select</button>
+                        <button id="ronaldo-btn" class="bg-blue-600 px-20 py-2">Select</button>
 
                     </div>
 
@@ -111,9 +111,9 @@
             <!-- right section  -->
 
             <div class="">
-                <div class="bg-black mb-5 pt-5 height ">
+                <div id="selected-players" class="bg-black mb-5 pt-5 height ">
                     <h1 class="text-xl pt-3 font-bold text-white text-center">Selected Players-V</h1>
-                    <ol class="text-white text-center pt-5">
+                    <ol type="1" class="text-white text-start pl-5 pt-5">
 
                     </ol>
 
@@ -122,26 +122,29 @@
                     <h1 class="text-xl pt-3 font-bold text-white text-center">Budget</h1>
                     <div class="text-white flex gap-1 px-1 pt-3 items-center">
                         <h1>Per Player</h1>
-                        <input class="border border-white py-2 bg-black w-8/12" type="text" name="" id="">
+                        <input class="border border-white py-2 bg-black w-8/12" type="text" name=""
+                            id="per-player-cost">
                     </div>
-                    <button class="bg-blue-600 px-20 py-2 my-4">Calculate</button>
+                    <button id="btn-calculate" class="bg-blue-600 px-20 py-2 my-4">Calculate</button>
                     <div class="text-white text-center flex gap-1 px-1 pt-3 items-center justify-between">
                         <h1>Player Expenses</h1>
-                        <h1>0000</h1>
+                        <h1><span class="text-green-400">$</span> <span id="player-expenses">0000</span>
+                        </h1>
 
                     </div>
                     <div class="text-white flex  px-1 pt-3 items-center justify-between">
                         <h1>Manager</h1>
-                        <input class="border border-white py-2 bg-black w-8/12" type="text" name="" id="">
+                        <input class="border border-white py-2 bg-black w-8/12" type="text" name="" id="manager-cost">
                     </div>
                     <div class="text-white flex  px-1 pt-3 items-center justify-between">
                         <h1>Coach</h1>
-                        <input class="border border-white py-2 bg-black w-8/12" type="text" name="" id="">
+                        <input class="border border-white py-2 bg-black w-8/12" type="text" name="" id="coach-cost">
                     </div>
-                    <button class="bg-blue-600 px-10 py-2 my-4 w-10/12 text-white">Calculate Total</button>
+                    <button id="calculate-total-btn" class="bg-blue-600 px-10 py-2 my-4 w-10/12 text-white">Calculate
+                        Total</button>
                     <div class="text-white text-center flex gap-1 px-1 py-3 items-center justify-between">
                         <h1>Total</h1>
-                        <h1 class="text-orange-400 font-bold">0000</h1>
+                        <h1 id="total" class="text-orange-400 font-bold">0000</h1>
 
                     </div>
 
@@ -154,7 +157,9 @@
 
     </main>
 
+    <script src="js/common.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/calculation.js"></script>
 </body>
 
 </html>
