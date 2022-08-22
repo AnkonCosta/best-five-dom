@@ -31,12 +31,13 @@ function getInputValueById(inputId) {
     const inputValueElementString = inputValueElement.value;
     const inputValue = parseFloat(inputValueElementString);
     inputValueElement.value = '';
-    if (isNaN(inputValue)) {
-        alert('Please insert a valid number!!!!!')
-        return;
-    }
-    else {
-        return inputValue;
-    }
+    return inputValue;
+    // if (isNaN(inputValue)) {
+    //     alert('Please insert a valid number!!!!!')
+    //     return;
+    // }
+    // else {
+    //     return inputValue;
+    // }
 }
 

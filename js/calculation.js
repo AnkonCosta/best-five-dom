@@ -5,6 +5,11 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
 
     const playersSelected = document.getElementById("selected-players").getElementsByTagName("li").length;
 
+    if (isNaN(perPlayerCost)) {
+        alert('please enter an amount.');
+        return;
+    }
+
     // player expenses 
     const playerExpenses = perPlayerCost * playersSelected;
     playerExpensesElement.innerText = playerExpenses;
@@ -30,6 +35,10 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     // total cost 
     const totalCostElement = document.getElementById('total');
     const total = managerCost + coachCost + playerExpenses;
+    if (isNaN(coachCost) || isNaN(managerCost)) {
+        alert('please enter an amount.');
+        return;
+    }
     totalCostElement.innerText = total;
 
 
