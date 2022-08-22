@@ -30,14 +30,7 @@ function getInputValueById(inputId) {
     const inputValueElement = document.getElementById(inputId);
     const inputValueElementString = inputValueElement.value;
     const inputValue = parseFloat(inputValueElementString);
-    inputValueElement.value = '';
+
     return inputValue;
-    // if (isNaN(inputValue)) {
-    //     alert('Please insert a valid number!!!!!')
-    //     return;
-    // }
-    // else {
-    //     return inputValue;
-    // }
 }
 
