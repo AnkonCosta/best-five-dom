@@ -1,7 +1,9 @@
 document.getElementById('btn-calculate').addEventListener('click', function () {
-    const perPlayerCostField = document.getElementById('per-player-cost');
-    const perPlayerCostString = perPlayerCostField.value;
-    const perPlayerCost = parseFloat(perPlayerCostString);
+    // const perPlayerCostField = document.getElementById('per-player-cost');
+    // const perPlayerCostString = perPlayerCostField.value;
+    // const perPlayerCost = parseFloat(perPlayerCostString);
+    // perPlayerCostField.value = '';
+    const perPlayerCost = getInputValueById('per-player-cost');
 
     const playerExpensesElement = document.getElementById('player-expenses');
 
@@ -21,19 +23,18 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
 
 
     // manager cost 
-    const managerCostElement = document.getElementById('manager-cost');
-    const managerCostElementString = managerCostElement.value;
-    const managerCost = parseFloat(managerCostElementString);
+
+    const managerCost = getInputValueById('manager-cost');
+
 
     // coach cost 
-    const coachCostElement = document.getElementById('coach-cost');
-    const coachCostElementString = coachCostElement.value;
-    const coachCost = parseFloat(coachCostElementString);
+
+    const coachCost = getInputValueById('coach-cost');
+
     // total cost 
     const totalCostElement = document.getElementById('total');
     const total = managerCost + coachCost + playerExpenses;
     totalCostElement.innerText = total;
-    // console.log(total)
 
 
 })
