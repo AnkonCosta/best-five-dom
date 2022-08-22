@@ -12,9 +12,9 @@ function selectPlayer(name, elementId) {
             button.style.backgroundColor = 'gray';
             return;
         }
-        // else {
-        //     button.style.backgroundColor = 'blue';
-        // }
+        else {
+            button.style.backgroundColor = 'blue';
+        }
 
 
 

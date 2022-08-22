@@ -1,15 +1,11 @@
 document.getElementById('btn-calculate').addEventListener('click', function () {
-    // const perPlayerCostField = document.getElementById('per-player-cost');
-    // const perPlayerCostString = perPlayerCostField.value;
-    // const perPlayerCost = parseFloat(perPlayerCostString);
-    // perPlayerCostField.value = '';
     const perPlayerCost = getInputValueById('per-player-cost');
 
     const playerExpensesElement = document.getElementById('player-expenses');
 
     const playersSelected = document.getElementById("selected-players").getElementsByTagName("li").length;
 
-
+    // player expenses 
     const playerExpenses = perPlayerCost * playersSelected;
     playerExpensesElement.innerText = playerExpenses;
 })
